@@ -1,0 +1,28 @@
+@import "../../scss/var";
+
+.wrap {
+  position: relative;
+
+  .position {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .img {
+    position: absolute;
+  }
+
+  .avatar {
+    top: 80px;
+  }
+
+  .shadow {
+    width: 200px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $black;
+    opacity: 30%;
+    top: 400px;
+  }
+}

@@ -1,0 +1,57 @@
+@import "./var";
+@import "./button";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.agility {
+  .title {
+    color: $green;
+  }
+
+  .substrate {
+    background-color: $green;
+  }
+}
+
+.strength {
+  .title {
+    color: $red;
+  }
+
+  .substrate {
+    background-color: $red;
+  }
+}
+
+.intelligence {
+  .title {
+    color: $blue;
+  }
+
+  .substrate {
+    background-color: $blue;
+  }
+}
+
+.charisma {
+  .title {
+    color: $yellow;
+  }
+
+  .substrate {
+    background-color: $yellow;
+  }
+}

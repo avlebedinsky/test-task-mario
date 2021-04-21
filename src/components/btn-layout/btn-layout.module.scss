@@ -1,0 +1,14 @@
+@import "../../scss/var";
+
+.wrap {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+}

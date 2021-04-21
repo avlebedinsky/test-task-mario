@@ -1,0 +1,29 @@
+@import "./var";
+
+.btn {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: $white;
+  font-size: 24px;
+  padding: 3px 5px;
+
+  &:hover {
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.3));
+  }
+
+  &:active {
+    border: 2px solid $white;
+  }
+}
+
+.btn-primary {
+  background-color: $blue;
+}
+
+.btn-danger {
+  background-color: $red;
+}

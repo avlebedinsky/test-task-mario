@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {FC} from 'react';
+import './App.scss';
+import MainLayout from './layouts/main-layout/main-layout';
+import ImgLayouts from './layouts/img-layout/img-layouts';
+import BaseStats from './components/base-stats/base-stats';
+import Skills from './components/skills/skills';
+import BtnLayout from './components/btn-layout/btn-layout';
+import {Provider} from 'react-redux';
+import {store} from './store';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App: FC = () => {
+    return (
+        <Provider store={store}>
+            <MainLayout>
+                <div className="section-main">
+                    <ImgLayouts/>
+                    <BaseStats/>
+                </div>
+                <Skills/>
+                <BtnLayout/>
+            </MainLayout>
+        </Provider>
+    );
+};
 
 export default App;

@@ -1,0 +1,33 @@
+@import "../../scss/var";
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+}
+
+.item {
+  min-width: 200px;
+  min-height: 70px;
+  border-radius: 0;
+  background-color: $blue-dark;
+
+  span {
+    opacity: 70%;
+  }
+
+  &:hover {
+    background-color: $red;
+
+    span {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    border: 10px solid $white;
+  }
+}
+
+.item + .item {
+  margin-left: 30px;
+}

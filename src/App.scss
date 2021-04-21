@@ -1,0 +1,12 @@
+@import "./src/scss/_var.scss";
+
+.section-main {
+  margin-right: 30px;
+}
+
+@media (max-width: $vertical) {
+  .section-main {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

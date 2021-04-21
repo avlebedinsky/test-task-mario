@@ -1,0 +1,47 @@
+@import "../../scss/var";
+
+.wrap {
+  width: 700px;
+  height: 70px;
+  background-color: $red;
+  border-top: 10px solid $white;
+  border-bottom: 10px solid $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: $white;
+  z-index: 2;
+  position: relative;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+
+  .name-input {
+    background-color: $red;
+    border: none;
+    color: $white;
+    font-size: 30px;
+    max-width: 280px;
+    user-select: text;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

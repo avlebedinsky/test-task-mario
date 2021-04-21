@@ -1,0 +1,21 @@
+@import "src/scss/var";
+
+.items {
+  margin: 0;
+  padding: 20px;
+  font-size: 30px;
+  text-shadow: 4px 1px 0 $white;
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item + .item {
+    margin-top: 10px;
+  }
+
+  .danger {
+    color: $red;
+  }
+}
